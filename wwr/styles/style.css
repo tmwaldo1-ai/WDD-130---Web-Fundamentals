@@ -1,0 +1,51 @@
+
+/* variables */
+:root{
+    --background-color: white;
+}
+
+div {
+    max-width: 1600px;
+}
+#content {
+    margin: 0 auto;
+}
+nav a {
+    text-align: center;
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
+main section {
+    text-align: center;
+}
+#background {
+    height: 725px;
+}
+body {
+    background-color: var(--background-color);
+}
+header {
+    background-color: var(--background-color);
+}
+nav a:hover {
+    background-color: var(--background-color);
+}
+.book, .join {
+    background-color: var(--background-color);
+}
+.book:hover, .join:hover {
+    background-color: var(--background-color);
+}
+#background {
+    background-color: var(--background-color);
+}
+.msg {
+    background-color: var(--background-color);
+}   
+footer {
+    background-color: var(--background-color);
+}

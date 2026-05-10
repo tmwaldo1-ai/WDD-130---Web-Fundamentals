@@ -8,6 +8,7 @@
     --paragraph-font: 'Lato', Helvetica, sans-serif;
 }
 
+
 div {
     max-width: 1600px;
 }
@@ -27,12 +28,16 @@ nav a:hover {
 }
 #hero-msg h1, #hero-msg h4, #hero-msg h2 {
     text-align: center;
+    padding: 10px;
 }
 .button-box {
     text-align: center;
 }
 main section {
     text-align: center;
+}
+main section img {
+    box-sizing: border-box;
 }
 #background {
     height: 725px;
@@ -55,6 +60,9 @@ h2 {
     font-family: var(--heading-font);
     margin: 0;
 }
+.card-img{
+    border: 10px solid black;
+}
 .book, .join {
     background-color: var(--background-color);
     color: var(--font-color);
@@ -62,6 +70,7 @@ h2 {
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     text-decoration: underline;

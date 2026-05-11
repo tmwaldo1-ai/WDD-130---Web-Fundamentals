@@ -19,6 +19,11 @@ div {
     margin: 0 auto;
 }
 
+nav {
+    background-color: var(--accent2-color);
+    padding: 35px;
+}
+
 nav a {
     background-color: var(--accent2-color);
     color: var(--font-color);
@@ -67,6 +72,7 @@ body {
 header {
     background-color: var(--background-color);
     font-family: var(--heading-font);
+    text-align: center;
 }
 
 h4 {

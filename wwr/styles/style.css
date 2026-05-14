@@ -6,7 +6,7 @@
     --secondary-color: #78c5d7;
     --accent1-color: white;
     --accent2-color: #FCE172;
-    
+
     --heading-font: Tahoma, sans-serif;
     --paragraph-font: 'Lato', Helvetica, sans-serif;
     --normfont-color: var(--primary-color);
@@ -24,12 +24,13 @@ div {
 
 nav {
     background-color: var(--accent2-color);
-    padding: 35px;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
     background-color: var(--accent2-color);
-    color: var(--font-color);
+    color: var(--normfont-color);
     text-align: center;
     text-decoration: none;
     padding: 35px;
@@ -41,12 +42,25 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
 #hero-msg h1,
-#hero-msg h4,
-#hero-msg h2 {
+#hero-msg h3,
+#hero-msg h4 {
     text-align: center;
     padding: 10px;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
+
 
 .button-box {
     text-align: center;
@@ -62,7 +76,7 @@ main section img {
 
 #background {
     height: 725px;
-    color: var(--font-color)
+    color: var(--normfont-color)
 }
 
 body {
@@ -77,10 +91,12 @@ header {
     background-color: var(--background-color);
     font-family: var(--heading-font);
     text-align: center;
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 
-h4 {
-    color: var(--font-color);
+h1, h2, h3, h4 {
+    color: var(--normfont-color);
 }
 
 h2 {
@@ -95,7 +111,7 @@ h2 {
 .book,
 .join {
     background-color: var(--secondary-color);
-    color: var(--font-color);
+    color: var(--normfont-color);
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
@@ -126,7 +142,7 @@ h2 {
 }
 
 .msg p {
-    color: var(--font-color);
+    color: var(--darkfont-color);
     font-size: .8em;
     padding-bottom: 15px;
 }
@@ -139,12 +155,11 @@ footer {
 }
 
 footer a {
-    color: var(--font-color);
+    color: var(--darkfont-color);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--font-color);
     text-decoration: underline;
 }
 
@@ -157,7 +172,7 @@ footer .social img {
 }
 
 .home-title {
-    color: var(--font-color);
+    color: var(--normfont-color);
     font-family: var(--heading-font);
     font-size: 2em;
     margin-top: 10px;
@@ -169,6 +184,8 @@ footer .social img {
 
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .icon {

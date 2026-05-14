@@ -11,6 +11,7 @@
     --paragraph-font: 'Lato', Helvetica, sans-serif;
     --normfont-color: var(--primary-color);
     --darkfont-color: var(--accent1-color);
+    --navcolor: #FCE17290;
 }
 
 
@@ -23,13 +24,14 @@ div {
 }
 
 nav {
-    background-color: var(--accent2-color);
+    /* makes sure that nav has a colored background - otherwise it will just be white. */
+    background-color: var(--navcolor);
     display: flex;
     justify-content: space-around;
 }
 
 nav a {
-    background-color: var(--accent2-color);
+    background-color: var(--navcolor);
     color: var(--normfont-color);
     text-align: center;
     text-decoration: none;
@@ -45,11 +47,19 @@ nav a:hover {
 .hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
 }
 
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
 }
 
 #hero-msg h1,

@@ -11,7 +11,8 @@
     --paragraph-font: 'Lato', Helvetica, sans-serif;
     --normfont-color: var(--primary-color);
     --darkfont-color: var(--accent1-color);
-    --navcolor: #FCE17290;
+    --navcolor: #FCE172D0;
+    --navhover: #134266D0;
 }
 
 
@@ -31,7 +32,6 @@ nav {
 }
 
 nav a {
-    background-color: var(--navcolor);
     color: var(--normfont-color);
     text-align: center;
     text-decoration: none;
@@ -39,12 +39,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--primary-color);
+    background-color: var(--navhover);
     color: var(--accent1-color);
     text-decoration: underline;
 }
 
-.hero {
+#hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
@@ -69,8 +69,16 @@ nav a:hover {
     padding: 10px;
     grid-column: 2/3;
     grid-row: 1/2;
+    color: var(--darkfont-color);
 }
 
+#hero-msg h2 {
+    text-align: center;
+}
+
+#hero-img {
+    width: 100%;
+}
 
 .button-box {
     text-align: center;
@@ -129,6 +137,9 @@ h2 {
     border-radius: 5px;
 }
 
+.book {
+    margin-top: auto;
+}
 /* 
 .book:hover,
 .join:hover {
@@ -203,12 +214,12 @@ footer .social img {
     padding-top: 10px
 }
 
-#hero-img {
-    width: 100%;
-}
-
 .rivers-card,
 .camping-card,
 .rapids-card {
     margin: 200px 0;
+}
+
+.card-img, .mountains {
+    width: 100%
 }

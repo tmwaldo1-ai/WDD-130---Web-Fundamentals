@@ -6,12 +6,62 @@
     <title>Dallin H. Oaks</title>
     <style>
         /* Insert styles here, this is called an internal stylesheet  */
+        div {
+            max-width: 1600px;
+        }
         body {
             background: #FFECD7;
+            display: flex;
+            justify-content: center;
         }
         #card {
             border: solid 4px #004e63;
             background-color: #008db1;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: .3fr .2fr 3fr .7fr .6fr;
+            width: 400px;
+            border-radius: 20px;
+        }
+        img {
+            border: solid white 6px;
+            grid-row: 3;
+            margin: auto;
+        }
+        h1 {
+            color: #fffffe;
+            font-family: Helvetica, sans-serif;
+            text-align: center;
+            font-size: 48px;
+            margin: 24px;
+        }
+        sub {
+            margin-top: 4px;
+        }
+        sub a{
+            color: #91e4fb;
+            font-family: Helvetica, sans-serif;
+            text-decoration: none;
+            text-align: center;
+            font-size: 21px;
+        }
+        li {
+            color: #fffffe;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            padding: 0;
+            margin-left: 52px;
+        }
+        ul {
+            display: inline-block;
+            text-align: center;
+            list-style-position: inside;
+        }
+        .quote {
+            color: #ffd783;
+            font-family: "Brush Script MT", "Brush Script MT Regular", cursive; /* I don't have Brush Script installed on my linux desktop, so I had no way to test this. */
+            text-align: center;
+            margin: 10px;
         }
     </style>
 </head>
@@ -19,14 +69,14 @@
     <!-- Insert HTML elements here -->
      <div id="card">
         <h1>Dallin H. Oaks</h1>
-        <sub>18th President of the Church of Jesus Christ of Latter-Day Saints</sub>
-        <img src="/ice/prophet_cards/images/oaks.webp" alt="Dallin H. Oaks">
+        <sub><a href="www.churchofjesuschrist.org"><p>18th President of the Church of Jesus Christ of Latter-Day Saints</p></a></sub>
+        <img src="images/oaks.webp" alt="Dallin H. Oaks">
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Born: Aug 12, 1932</li>
+            <li>Apostle: Apr 7, 1984</li>
+            <li>Prophet: Oct 14, 2025</li>
         </ul>
-        <p class="quote">"The only permanent solution..."</p>
+        <p class="quote"><strong>"The only permanent solution to the differences that divide us is for all of us to follow our Savior's teachings and to gradually become even as He is."</strong></p>
      </div>
 </body>
 </html>

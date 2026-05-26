@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Favorite Devotionals</title>
   <link rel="stylesheet" href="styles/styles.css" />
 </head>
+
 <body>
   <div class="container">
     <header class="header">
@@ -16,9 +18,44 @@
     <main>
       <div class="content-box">
         <!-- Add your devotional content here -->
-         Add your table and your form here.
+        <table>
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+            <td>Brother Meredith</td>
+            <td>How Can One Person Be a Peacemaker?</td>
+            <td>BYUI Center</td>
+            <td>2026</td>
+          <tr>
+            <td>Sister Mackley</td>
+            <td>The Transforming Power of Jesus Christ</td>
+            <td>BYUI Center</td>
+            <td>2026</td>
+          </tr>
+          <tr>
+            <td>Elder Robert C. Gay</td>
+            <td>Be True to the Voice of God</td>
+            <td>BYUI Center</td>
+            <td>2026</td>
+          </tr>
+        </table>
+        <form>
+          <label for="speaker">Speaker:</label><br>
+          <input type="text" id="speaker" name="speaker"><br>
+          <label for="title">Title:</label><br>
+          <input type="text" id="title" name="title"><br>
+          <label for="location">Location:</label><br>
+          <input type="text" id="location" name="location"><br>
+          <label for="year">Year:</label><br>
+          <input type="text" id="year" name="year"><br>
+          <input type="submit" value="Submit">
+        </form>
       </div>
     </main>
   </div>
 </body>
+
 </html>

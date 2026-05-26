@@ -43,7 +43,7 @@ body {
   max-width: 900px;
   padding: 40px;
   box-shadow: 5px 5px 0px black;
-  min-height: 400px;
+  /* min-height: 300px; */
   justify-content: center;
 }
 

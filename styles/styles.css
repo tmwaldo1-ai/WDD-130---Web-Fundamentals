@@ -1,3 +1,11 @@
+/* variables */
+:root {
+    --color1: #335c67;
+    --color2: #fff3b0;
+    --color3: #e09f3e;
+    --color4: #9e2a2b;
+}
+
 nav {
     float: right;
     width: 50%;

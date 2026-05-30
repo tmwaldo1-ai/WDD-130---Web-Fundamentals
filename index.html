@@ -6,32 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Page</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <style>
-        /* This is CSS code now */
-        /* Remember - with CSS sizing, you need to tell them units, like px. */
-    </style>
 </head>
 
 <body>
-    <header>
-        <img src="images/wdd130logo.png" alt="Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="wwr/index.html">WWR</a>
-            <a href="ice/">ICE</a>
-            <a href="#aboutme">About Me</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <main class="main-content">
-        <div id="aboutme"
-        <form id="contact">
-
-        </form>
-    </main>
-    <footer>
-
-    </footer>
+    <div id="content">
+        <header>
+            <img src="images/wdd130logo.png" alt="Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="wwr/index.html">WWR</a>
+                <a href="ice/">ICE</a>
+                <a href="#aboutme">About Me</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <main class="info">
+            <!--These buttons might be redundant, but I was thinking of adding a hero image of some kind.-->
+            <section class="button wwr">
+                <a href="wwr/index.html">WWR</a>
+            </section>
+            <section class="button ice">
+                <a href="ice/">ICE</a>
+            </section>
+            <section id="aboutme">
+                <!--Probably gonna put an image of myself here-->
+                <img src="" alt="me">
+                <h1>About Me</h1>
+                <section id="school">
+                    <h3>School</h3>
+                    <p>Hi! I'm Tate Waldron, and I'm a CS student here at BYUI. This is my 2nd semester here.</p>
+                </section>
+                <section id="mission">
+                    <h3>Mission</h3>
+                    <p>I served a service mission in the Salt Lake City headquaters mission in 2025.</p>
+                </section>
+                <section id="interests">
+                    <h3>Interests</h3>
+                    <h4>Here are some of my interests:</h4>
+                    <ul>
+                        <li>Video Games</li>
+                        <li>Military History</li>
+                        <li>Simulators</li>
+                        <li>Space & Spaceflight</li>
+                        <li>Building Models</li>
+                    </ul>
+                </section id="table">
+                <!--This table is just a placeholder for now, I have yet to decide what to do with it.-->
+                <table>
+                    <tr>
+                        <th>Lorem</th>
+                        <th>ipsum</th>
+                        <th>dolor</th>
+                    </tr>
+                    <tr>
+                        <td>sit</td>
+                        <td>amet</td>
+                        <td>consectetur</td>
+                    </tr>
+                    <tr>
+                        <td>adipiscing</td>
+                        <td>elit</td>
+                        <td>sed</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="contact">
+                <h1>Contact Me</h1>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="message">Type message here:</label><br>
+                    <input type="text" size="40" id="message" name="message"><br>
+                    <input type="submit" value="Send">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 - Tate Waldron</p>
+        </footer>
+    </div>
 </body>
 
 </html>

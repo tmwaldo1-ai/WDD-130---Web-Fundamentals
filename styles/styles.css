@@ -4,11 +4,27 @@
     --color2: #fff3b0;
     --color3: #e09f3e;
     --color4: #9e2a2b;
+
 }
 
-/* nav {
-    float: right;
-    width: 50%;
-    height: 50px;
-    background: #5d6e4767;
-} */
+header {
+    background-color: var(--color1);
+    display: grid;
+}
+
+nav {
+    background-color: var(--color1);
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.logo {
+    size: 10%;
+}

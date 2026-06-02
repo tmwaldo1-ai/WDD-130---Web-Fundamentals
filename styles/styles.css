@@ -9,15 +9,18 @@
 
 header {
     background-color: var(--color1);
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     background-color: var(--color1);
+    text-align: center;
 }
 
 nav a {
     color: white;
+    padding: 12px;
 }
 
 nav a:hover {
@@ -26,5 +29,5 @@ nav a:hover {
 }
 
 .logo {
-    size: 10%;
+    width: 10%;
 }

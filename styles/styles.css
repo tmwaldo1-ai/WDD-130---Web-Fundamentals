@@ -1,10 +1,13 @@
 /* variables */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --color1: #335c67;
     --color2: #fff3b0;
     --color3: #e09f3e;
     --color4: #9e2a2b;
-
+    --font: Roboto
 }
 
 header {
@@ -20,6 +23,7 @@ nav {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    font-family: var(--font);
 }
 
 nav a {

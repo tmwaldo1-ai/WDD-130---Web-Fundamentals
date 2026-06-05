@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Page</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
 </head>
 
 <body>
@@ -75,15 +72,16 @@
             </section>
         </main>
         <aside>
-            <section id="contact">
+            <div id="button">></div>
+            <section id="contact-pullout">
                 <h1>Contact Me</h1>
                 <form>
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name"><br>
                     <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email"><br>
+                    <input type="email" id="email" name="email"><br>
                     <label for="message">Type message here:</label><br>
-                    <input type="text" size="40" id="message" name="message"><br>
+                    <textarea id="message" name="message" rows="4"></textarea>
                     <input type="submit" value="Send">
                 </form>
             </section>

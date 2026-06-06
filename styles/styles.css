@@ -46,13 +46,27 @@ nav a {
     vertical-align: baseline;
     margin: auto;
     padding: 40px;
+    font-size: medium;
 }
 
-nav a:hover {
+#contacttoggle {
+    color: white;
+    text-decoration: none;
+    vertical-align: baseline;
+    margin: auto;
+    padding: 40px;
+    border: none;
+    background-color: transparent;
+    font-family: var(--font);
+    font-size: medium;
+}
+
+nav a:hover, #contacttoggle:hover {
     background-color: var(--color2);
     color: var(--color1);
     text-decoration: underline;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .logo {

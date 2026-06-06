@@ -8,6 +8,8 @@
     --color3: #e09f3e;
     --color4: #9e2a2b;
     --font: Roboto
+    /** I know the font is generic but I am unfortunatly limited because I decided to do most of this
+    on my linux desktop, and apparently like 90% of fonts in general are liscensed as Windows exclusive :P **/
 }
 
 body {
@@ -76,6 +78,7 @@ main {
 p {
     text-align: left;
     margin: auto;
+    font-size: medium;
 }
 
 h1,
@@ -121,26 +124,22 @@ footer p {
     padding: 30px;
 }
 
-#button {
-    cursor: pointer;
-    display: flex;
-}
 
-
-#contact-pullout {
+#contact {
+    display: grid;
     border: 4px solid #9e2a2b;
     background-color: #fff3b5;
     font-family: var(--font);
     display: flex;
     justify-content: center;
-    width: 400px;
+    width: 300px;
     height: 300px;
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 0;
 }
 
-#contact-pullout h1 {
+#contact h1 {
     text-align: center;
     top: 50%;
 }

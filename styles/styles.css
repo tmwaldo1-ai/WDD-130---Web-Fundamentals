@@ -19,6 +19,7 @@ body {
 
 #content {
     max-width: 2000px;
+    background-color: #fff3b0;
 }
 
 header {
@@ -60,11 +61,20 @@ nav a:hover {
 }
 
 main {
-    max-width: 1400px;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     margin: auto;
     background-color: #e09f3e;
+}
+
+#portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 6px;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .info {
@@ -72,7 +82,7 @@ main {
     text-align: center;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 p {
@@ -88,6 +98,7 @@ h3 {
 
 #interests {
     text-align: center;
+    margin: 12px;
 }
 
 ul {
@@ -98,6 +109,7 @@ ul {
 
 table {
     display: inline-block;
+    margin: 20px;
 }
 
 table,
@@ -121,16 +133,17 @@ footer {
 footer p {
     color: white;
     font-family: var(--font);
-    padding: 30px;
+    padding-top: 30px;
 }
 
 
 #contact {
     display: grid;
+    grid-template-rows: 1fr 4fr;
     border: 4px solid #9e2a2b;
+    border-radius: 15px;
     background-color: #fff3b5;
     font-family: var(--font);
-    display: flex;
     justify-content: center;
     width: 300px;
     height: 300px;
@@ -142,4 +155,9 @@ footer p {
 #contact h1 {
     text-align: center;
     top: 50%;
+    grid-row: 1/1;
+}
+
+#contact form {
+    grid-row: 2/2;
 }

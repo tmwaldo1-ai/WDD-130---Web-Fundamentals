@@ -12,6 +12,10 @@
     on my linux desktop, and apparently like 90% of fonts in general are liscensed as Windows exclusive :P **/
 }
 
+html {
+    background-color: #9e2a2b;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -88,7 +92,7 @@ main {
 }
 
 p {
-    text-align: left;
+    text-align: center;
     margin: auto;
     font-size: medium;
 }
@@ -112,6 +116,7 @@ ul {
 table {
     display: inline-block;
     margin: 20px;
+    max-width: 950px;
 }
 
 table,
@@ -119,10 +124,19 @@ td {
     border: 3px solid var(--color1);
 }
 
+td {
+    padding: 3px;
+    max-width: 500px;
+}
+
+td a {
+    color: #9e2a2b;
+}
+
 th {
     background-color: var(--color4);
     color: white;
-    padding: 4px;
+    padding: 5px;
 }
 
 footer {
@@ -137,6 +151,8 @@ footer p {
     color: white;
     font-family: var(--font);
     padding-top: 30px;
+    padding-left: 30px;
+    text-align: left;
 }
 
 

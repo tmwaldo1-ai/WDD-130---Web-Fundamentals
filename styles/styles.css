@@ -87,6 +87,7 @@ main {
     font-family: var(--font);
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding-top: 120px;
 }
